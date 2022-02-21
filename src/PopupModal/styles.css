@@ -1,0 +1,193 @@
+.emailPopup {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  width: 516px;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: #333;
+  margin: auto;
+}
+
+.emailPopup * {
+  box-sizing: border-box;
+}
+
+.emailPopupHeader {
+  border-radius: 6px 6px 0 0;
+  background-color: #f6f8fa;
+  padding: 22px 32px;
+  display: flex;
+  align-items: center;
+  color: #2b2f33;
+}
+
+.emailPopupHeader-info {
+  padding: 6px 0 0 0;
+}
+
+.emailPopupHeader-name {
+  margin: 6px 0 9px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.emailPopupHeader-total {
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.emailPopupHeader-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+}
+
+.emailPopupHeader-logoImg {
+  display: block;
+  width: 42px;
+  height: 44px;
+}
+
+.emailPopupBody {
+  padding: 30px 30px 37px 30px;
+  font-size: 14px;
+}
+
+.emailPopupLink {
+  color: #2962cb;
+  text-decoration: none;
+}
+
+.emailPopupLink:hover {
+  text-decoration: underline;
+}
+
+.emailPopupForm {
+  display: flex;
+  flex-direction: column;
+  min-height: 332px;
+}
+
+.emailPopupFormRow {
+  margin-bottom: 20px;
+}
+
+.emailPopupForm-body {
+  margin-bottom: 20px;
+}
+
+.emailPopupForm-footer {
+  margin-top: auto;
+}
+
+.emailPopupInput {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #d3d7db;
+  padding: 10px 12px;
+}
+
+.emailPopupInput:focus {
+  outline: none;
+  border-bottom-color: #4d97ec;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.checkbox-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #4c96ec;
+  background-color: #fff;
+  margin: 0 8px 0 0;
+  position: relative;
+  z-index: 5;
+}
+
+.checkbox-icon:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 12px;
+  height: 6px;
+  border-left: 4px solid #2e67cd;
+  border-bottom: 4px solid #2e67cd;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.checkbox-input:checked ~ .checkbox-icon:before {
+  opacity: 1;
+}
+
+.checkbox:hover .checkbox-icon {
+  border-color: #2e67cd;
+}
+
+.checkbox-text {
+  position: relative;
+  z-index: 5;
+}
+
+.emailPopupButton {
+  display: block;
+  height: 52px;
+  border: none;
+  border-radius: 65536px;
+  min-width: 100px;
+  background: linear-gradient(90deg, #4d97ec, #2e67cd);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.emailPopupButton:disabled {
+  background: linear-gradient(90deg, #ececec, #cdcdcd);
+}
+
+.emailPopupTerms {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.emailPopuplabel {
+  display: block;
+}
+
+.emailPopupButton_submit {
+  width: 100%;
+  max-width: 302px;
+  display: block;
+  margin: 0 auto;
+}
